@@ -62,6 +62,11 @@ li:nth-child(odd) {
   display: none;
 }
 
+.show {
+  display: block;
+  text-align: left;
+}
+
 .start {
   text-align: center;
 }

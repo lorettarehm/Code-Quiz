@@ -1,23 +1,35 @@
 // Create a code quiz that contains the following requirements:
 
+// Variables to get DOM elements needed
+var startScreen = document.querySelector("#start-screen");
+var questions = document.querySelector("#questions");
+var endScreen = document.querySelector("#end-screen");
+
 // * A start button that when clicked a timer starts and the first question appears.
 var startButton = document.querySelector("#start");
 var time = document.querySelector("#time");
 var timerStarted = false;
+var timeCountdown = 30;
 
 startButton.addEventListener("click", function (event) {
     event.preventDefault();
     // Add questions to the page
     addQuestion(question1);
 
-    // Set and start the timer
-    var timeCountdown = 30;
+    // Hide start screen and show questions
+    startScreen.setAttribute("class","hide");
+    questions.setAttribute("class","show");
+
+    // Start the timer
     if (!timerStarted) {
         timerStarted = true;
         var myTimer = setInterval(function () {
             if (timeCountdown === 0) {
                 clearInterval(myTimer);
                 alert("Time out!");
+                // Hide questions and show end screen
+                questions.setAttribute("class","hide");
+                endScreen.setAttribute("class","start");
             } else {
                 timeCountdown--;
             } time.textContent = timeCountdown + "s";

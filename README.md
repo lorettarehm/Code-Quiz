@@ -12,10 +12,10 @@ Click [here](https://lorettarehm.github.io/Code-Quiz/) to access the page.
 ## Usage 
 The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer.
 Each wrong answer subtracts ten seconds from the 60 initial seconds provided".
-![The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer. Each wrong answer subtracts 5 seconds from the 60 initial seconds provided.](./assets/images/lorettarehm.github.io_Password-Generator.png)
+![The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer. Each wrong answer subtracts 5 seconds from the 60 initial seconds provided.](./assets/img/lorettarehm.github.io_Code-Quiz_.png)
 
 ## Credits
 * Trilogy Education Services
-* [https://www.w3schools.com/] W3Schools
+* [W3Schools](https://www.w3schools.com/)
 
 ## [License](./LICENSE)
