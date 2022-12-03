@@ -2,6 +2,7 @@
 var numberOfQuestions = listOfQuestions.length;
 var currentQuestion = 0;
 var pointsScored = 0;
+var pointsToAdd = 10;
 
 // Variables to get DOM elements needed
 var questionTitle = document.querySelector("#question-title");
@@ -11,12 +12,13 @@ var questions = document.querySelector("#questions");
 var endScreen = document.querySelector("#end-screen");
 var finalScore = document.querySelector("#final-score");
 var submitBtn = document.querySelector("#submit");
+var feedback = document.querySelector("#feedback");
 
 // * A start button that when clicked a timer starts and the first question appears.
 var startButton = document.querySelector("#start");
 var time = document.querySelector("#time");
 var timerStarted = false;
-var timeCountdown = 30;
+var timeCountdown = 60;
 var timePenalty = 10;
 
 //===========//
@@ -39,9 +41,9 @@ function addQuestion(question) { // Add question text
 
     for (var i = 0; i < choicesArr.length; i++) {
         var liEl = document.createElement("li");
-        if (i === rightChoice) {
+        if (i === rightChoice) { // Right choice was selected
             liEl.setAttribute("data-right-answer", true);
-        } else {
+        } else { // Wrong choice was selected
             liEl.setAttribute("data-right-answer", false);
         }
         // * Questions contain buttons for each answer.
@@ -107,8 +109,11 @@ questions.addEventListener("click", function (event) {
         
         if (element.parentElement.getAttribute("data-right-answer") === "true") { // Get the parent li element and check if data-right-answer is true
             
-            pointsScored++; // If is, add 1 to the points scored
+            pointsScored = pointsScored + pointsToAdd; // If is, add to the points scored
             currentQuestion++; // Increment the number of questions answered
+
+            // Provide feedback to right answer
+            feedback.textContent = "Right!"
             
             if (currentQuestion === numberOfQuestions) { // * The quiz should end when all questions are answered.
                 endGame(); 
@@ -118,7 +123,12 @@ questions.addEventListener("click", function (event) {
         } else { 
             // * If the answer clicked was incorrect then subtract time from the clock
             timeCountdown = timeCountdown - timePenalty;
+
+            // Provide feedback to wrong answer
+            feedback.textContent = "Wrong!"
         }
+        // Show feedback element
+        feedback.setAttribute("class", "feedback");
     }
 })
 

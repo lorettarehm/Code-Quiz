@@ -13,6 +13,10 @@ a:hover {
   color: #8570a5;
 }
 
+h1 {
+  color: #563d7c;
+}
+
 button {
   display: inline-block;
   margin: 5px;
