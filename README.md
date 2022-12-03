@@ -1,5 +1,5 @@
 # Code Quiz
-Timed coding quiz with multiple-choice questions.
+Timed coding quiz with single-choice questions.
 
 ![badmath](https://img.shields.io/badge/JavaScript-69%25-%23efd81d)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/HTML-19%25-%23e34c26)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/CSS-12%25-%23563d7c)
 
