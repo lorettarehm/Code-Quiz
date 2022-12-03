@@ -10,6 +10,7 @@ var startScreen = document.querySelector("#start-screen");
 var questions = document.querySelector("#questions");
 var endScreen = document.querySelector("#end-screen");
 var finalScore = document.querySelector("#final-score");
+var submitBtn = document.querySelector("#submit");
 
 // * A start button that when clicked a timer starts and the first question appears.
 var startButton = document.querySelector("#start");
@@ -54,15 +55,17 @@ function addQuestion(question) { // Add question text
     choices.add;
 }
 
-function endGame() {
+function endGame() { // * When the game ends, it should display their score and give the user the ability to save their initials and their score
     // Set timer to 0
     timeCountdown = 0;
     time.textContent = timeCountdown + "s";
     // Pass the points scored to the respective place on the page
     finalScore.textContent = pointsScored;
+
     // Hide questions and show end screen
     questions.setAttribute("class", "hide");
     endScreen.setAttribute("class", "start");
+
 }
 
 //===========//
@@ -119,5 +122,15 @@ questions.addEventListener("click", function (event) {
     }
 })
 
+submitBtn.addEventListener("click", function() {
 
-// * When the game ends, it should display their score and give the user the ability to save their initials and their score
+    // Create array to hold the score and retrieve any eventual scores already stored in the localStorage
+    var scoreArr = JSON.parse(localStorage.getItem('score')) || [];
+
+    // Add the current score to the array
+    scoreArr.push(document.querySelector("#initials").value + " - " + pointsScored);
+
+    //Get values from page and add them to localStorage
+    localStorage.setItem("score", JSON.stringify(scoreArr));
+
+});

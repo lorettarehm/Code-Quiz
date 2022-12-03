@@ -36,6 +36,7 @@ button:hover {
 
 input[type="text"] {
   font-size: 100%;
+  text-transform: uppercase;
 }
 
 ol {
@@ -44,10 +45,15 @@ ol {
   overflow: auto;
 }
 
-li {
+ul li {
   padding: 5px;
-  /* list-style: decimal inside none; */
   list-style: none;
+}
+
+ol li {
+  padding: 5px;
+  text-transform: uppercase;
+  list-style: decimal inside none;
 }
 
 li:nth-child(odd) {

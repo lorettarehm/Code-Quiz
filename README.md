@@ -18,5 +18,6 @@ Each wrong answer subtracts ten seconds from the 60 initial seconds provided".
 * Trilogy Education Services
 * [W3Schools](https://www.w3schools.com/)
 * [MDN list-style](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style)
+* [Stack Overflow](https://stackoverflow.com/questions/16717019/adding-list-to-array-of-list-in-localstorage)
 
 ## [License](./LICENSE)
