@@ -113,6 +113,8 @@ questions.addEventListener("click", function (event) {
             currentQuestion++; // Increment the number of questions answered
 
             // Provide feedback to right answer
+            var audioRight = new Audio("./assets/sfx/correct.wav");
+            audioRight.play();
             feedback.textContent = "Right!"
             
             if (currentQuestion === numberOfQuestions) { // * The quiz should end when all questions are answered.
@@ -125,6 +127,8 @@ questions.addEventListener("click", function (event) {
             timeCountdown = timeCountdown - timePenalty;
 
             // Provide feedback to wrong answer
+            var audioWrong = new Audio("./assets/sfx/incorrect.wav");
+            audioWrong.play();
             feedback.textContent = "Wrong!"
         }
         // Show feedback element

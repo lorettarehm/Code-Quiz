@@ -1,7 +1,7 @@
 # Code Quiz
 Timed coding quiz with multiple-choice questions.
 
-![badmath](https://img.shields.io/badge/JavaScript-56%25-%23efd81d)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/HTML-15%25-%23e34c26)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/CSS-29%25-%23563d7c)
+![badmath](https://img.shields.io/badge/JavaScript-69%25-%23efd81d)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/HTML-19%25-%23e34c26)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/CSS-12%25-%23563d7c)
 
 ---
 ## Installation
@@ -11,8 +11,11 @@ Click [here](https://lorettarehm.github.io/Code-Quiz/) to access the page.
 
 ## Usage 
 The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer.
-Each wrong answer subtracts ten seconds from the 60 initial seconds provided".
-![The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer. Each wrong answer subtracts 5 seconds from the 60 initial seconds provided.](./assets/img/lorettarehm.github.io_Code-Quiz_.png)
+Each wrong answer subtracts ten seconds from the 60 initial seconds provided.
+
+**Please be aware** that the page will provide visual and audible feedback.
+
+![The webpage includes a timer and a list of questions that will be displayed for the user to chose correct answer. Each wrong answer subtracts 5 seconds from the 60 initial seconds provided.](./assets/img/Coding%20Quiz.gif)
 
 ## Credits
 * Trilogy Education Services
