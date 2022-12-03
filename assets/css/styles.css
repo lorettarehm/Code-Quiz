@@ -46,7 +46,8 @@ ol {
 
 li {
   padding: 5px;
-  list-style: decimal inside none;
+  /* list-style: decimal inside none; */
+  list-style: none;
 }
 
 li:nth-child(odd) {

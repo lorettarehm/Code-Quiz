@@ -17,5 +17,6 @@ Each wrong answer subtracts ten seconds from the 60 initial seconds provided".
 ## Credits
 * Trilogy Education Services
 * [W3Schools](https://www.w3schools.com/)
+* [MDN list-style](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style)
 
 ## [License](./LICENSE)
